@@ -127,7 +127,7 @@ namespace GHBit {
 
     export enum enButton {
 
-        B1 = 0,
+        B1,
         B2,
         B3,
         B4
@@ -305,7 +305,7 @@ namespace GHBit {
     //% color="#C814B8"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
     export function Button(num: enButton, value: enButtonState): boolean {
-        let temp = false;
+        let temp = true;
         switch (num) {
             case enButton.B1: {
                 pins.setPull(DigitalPin.P13, PinPullMode.PullUp);
